@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from vitamin7.in/ums/lift-branding.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Dec 2024 14:52:06 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="format-detection" content="telephone=no">
+<title>UMS | Advertising Creative Agency</title>
+<meta name="author" content="Themezinho">
+<meta name="description" content="Anchor | Freelancer & Creative Agency Portfolio">
+<meta name="keywords" content="creative, works" >
+<meta property="og:description" content="UMS | Advertising Creative Agency">
+<meta property="og:image" content="../../themezinho.net/Anchor/preview.html">
+<meta property="og:site_name" content="UMS">
+<meta property="og:title" content="UMS | Advertising Creative Agency">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://www.themezinho.net/Anchor">
+
+<!-- TWITTER META -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@Anchor">
+<meta name="twitter:creator" content="@Anchor">
+<meta name="twitter:title" content="Anchor">
+<meta name="twitter:description" content="UMS | Advertising Creative Agency">
+<meta name="twitter:image" content="../../themezinho.net/Anchor/preview.html">
+
+<!-- FAVICON FILES -->
+<link href="https://vitamin7.in/404.php" rel="apple-touch-icon" sizes="144x144">
+<link href="https://vitamin7.in/404.php" rel="apple-touch-icon" sizes="114x114">
+<link href="https://vitamin7.in/404.php" rel="apple-touch-icon" sizes="72x72">
+<link href="https://vitamin7.in/404.php" rel="apple-touch-icon">
+<link href="images/favicon.png" rel="shortcut icon">
+
+<!-- CSS FILES -->
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/hamburger-menu.css">
+<link rel="stylesheet" href="css/odometer.min.css">
+<link rel="stylesheet" href="css/swiper.min.css">
+<link rel="stylesheet" href="css/fancybox.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+
+
+  
+<script>
+    "use strict";
+var testim = document.getElementById("testim"),
+  testimDots = Array.prototype.slice.call(
+    document.getElementById("testim-dots").children
+  ),
+  testimContent = Array.prototype.slice.call(
+    document.getElementById("testim-content").children
+  ),
+  testimLeftArrow = document.getElementById("left-arrow"),
+  testimRightArrow = document.getElementById("right-arrow"),
+  testimSpeed = 4500,
+  currentSlide = 0,
+  currentActive = 0,
+  testimTimer,
+  touchStartPos,
+  touchEndPos,
+  touchPosDiff,
+  ignoreTouch = 30;
+window.onload = function () {
+  // Testim Script
+  function playSlide(slide) {
+    for (var k = 0; k < testimDots.length; k++) {
+      testimContent[k].classList.remove("active");
+      testimContent[k].classList.remove("inactive");
+      testimDots[k].classList.remove("active");
+    }
+
+    if (slide < 0) {
+      slide = currentSlide = testimContent.length - 1;
+    }
+
+    if (slide > testimContent.length - 1) {
+      slide = currentSlide = 0;
+    }
+
+    if (currentActive != currentSlide) {
+      testimContent[currentActive].classList.add("inactive");
+    }
+    testimContent[slide].classList.add("active");
+    testimDots[slide].classList.add("active");
+
+    currentActive = currentSlide;
+
+    clearTimeout(testimTimer);
+    testimTimer = setTimeout(function () {
+      playSlide((currentSlide += 1));
+    }, testimSpeed);
+  }
+
+  testimLeftArrow.addEventListener("click", function () {
+    playSlide((currentSlide -= 1));
+  });
+
+  testimRightArrow.addEventListener("click", function () {
+    playSlide((currentSlide += 1));
+  });
+
+  for (var l = 0; l < testimDots.length; l++) {
+    testimDots[l].addEventListener("click", function () {
+      playSlide((currentSlide = testimDots.indexOf(this)));
+    });
+  }
+
+  playSlide(currentSlide);
+
+  // keyboard shortcuts
+  document.addEventListener("keyup", function (e) {
+    switch (e.keyCode) {
+      case 37:
+        testimLeftArrow.click();
+        break;
+
+      case 39:
+        testimRightArrow.click();
+        break;
+
+      case 39:
+        testimRightArrow.click();
+        break;
+
+      default:
+        break;
+    }
+  });
+
+  testim.addEventListener("touchstart", function (e) {
+    touchStartPos = e.changedTouches[0].clientX;
+  });
+
+  testim.addEventListener("touchend", function (e) {
+    touchEndPos = e.changedTouches[0].clientX;
+
+    touchPosDiff = touchStartPos - touchEndPos;
+
+    console.log(touchPosDiff);
+    console.log(touchStartPos);
+    console.log(touchEndPos);
+
+    if (touchPosDiff > 0 + ignoreTouch) {
+      testimLeftArrow.click();
+    } else if (touchPosDiff < 0 - ignoreTouch) {
+      testimRightArrow.click();
+    } else {
+      return;
+    }
+  });
+};
+
+</script>
+
+</head>
+<body>
+<!--<body oncontextmenu="return false;">
+<div class="preloader"> <img src="images/ums-logo-preloader.gif" alt="Image">
+ <!-- <ul class="text-rotater">
+    <li>Hangin there</li>
+    <li>Still loading</li>
+    <li>Almost done</li>
+  </ul>-->
+</div>
+<!-- end preloader -->
+<div class="transition-overlay"></div>
+<!-- end transition-overlay -->
+<main>
+  <ul class="hamburger-navigation">
+    <li><a href="index.html">Home</a>
+    </li>
+    <li><a style="color:white">About Us</a>
+     <ul class="dropdown">
+    	<li><a href="advertising.html">Advertising & Marketing</a></li>
+    	<li><a href="branding.html">Branding </a></li>
+    	<li><a href="web-and-app.html">Web & App</a></li>
+    </ul>
+      </li>
+      <li><a style="color:white">OOH</a>
+      <ul class="dropdown">
+    	<li><a href="theatre-release.html">Cinema</a></li>
+    	<li><a href="led-screens.html">LED Screens</a></li>
+    	<li><a href="lift-branding.html">Lift Branding</a></li>
+    	<li><a href="metro.html">Metro</a></li>
+    	<li><a href="bus-branding.html">Bus Branding</a></li>
+    	<li><a href="radio.html">Radio</a></li>
+    	<li><a href="mobile-van-branding.html">Mobile Van Branding</a></li>
+    	<li><a href="print-services.html">Print Services</a></li>
+    </ul>
+      </li>
+       <li><a href="event-management.html"> Event Management</a> </li>
+  
+    <li><a href="contact.html">Say Hello</a> </li>
+  </ul>
+  <!-- end hamburger-navigation -->
+  <svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <path class="shape-overlays__path" d=""></path>
+    <path class="shape-overlays__path" d=""></path>
+    <path class="shape-overlays__path" d=""></path>
+  </svg>
+  <header class="header" >
+    <div class="logo"><a href="index.html"><img src="images/ums-logo.png" alt="ums logo" style="width:300px"></a></div>
+    <!-- end logo --> 
+     <!--  <span class="phone">t: +380 83 857 5 577</span> --> 
+    <div class="hamburger" id="hamburger">
+      <div class="hamburger__line hamburger__line--01">
+        <div class="hamburger__line-in hamburger__line-in--01"></div>
+      </div>
+      <div class="hamburger__line hamburger__line--02">
+        <div class="hamburger__line-in hamburger__line-in--02"></div>
+      </div>
+      <div class="hamburger__line hamburger__line--03">
+        <div class="hamburger__line-in hamburger__line-in--03"></div>
+      </div>
+      <div class="hamburger__line hamburger__line--cross01">
+        <div class="hamburger__line-in hamburger__line-in--cross01"></div>
+      </div>
+      <div class="hamburger__line hamburger__line--cross02">
+        <div class="hamburger__line-in hamburger__line-in--cross02"></div>
+      </div>
+    </div>
+    <!-- end hamburger 
+    <div class="equalizer"> <span></span> <span></span> <span></span> <span></span> </div>
+    <!-- end equalizer -->
+   
+  </header>
+  <ul class="social-bar">
+    <li><a href="#">FB</a></li>
+    <li><a href="#">IN</a></li>
+    <li><a href="#">TY</a></li>
+    <li><a href="#">X</a></li>
+  </ul>
+ <section class="int-hero">
+    
+    <div class="inner">
+      <h2 class="lifth2">Apartment Lift Inside Branding (Frontlight Poster)</h2>
+    </div>
+    <!-- end inner --> 
+  </section>
+  
+  
+<section class="content" style="padding-bottom: 20px;">
+    <div class="about-studio">
+      <figure class="hero-image wow fadeInUp" style="margin-bottom: 30px;"> <img src="images/lift-displays-kochi.jpg" alt="Image"></figure>
+      <div class="container">
+        <div class="row">
+          
+          <!-- end col-4 -->
+          <div class="col-md-8 wow fadeInRight">
+            <p class="lead" style="margin-bottom:0px;line-height: 30px; max-width: 100%;">Printed posters are placed into acrylic boards inside apartment lifts.</p>
+            <p class="lead" style="margin-bottom:0px;line-height: 30px; max-width: 100%;"><span class="bold">Each lift will feature 6 to 8 client posters</span>.</p>
+            <!--  <p class="lead" style="margin-bottom:0px;line-height: 30px; max-width: 100%;">Cost: <span class="bold">₹950 to ₹1200</span>, depending on the number of apartments</p>-->
+           
+        
+          </div>
+          <!--end col-6 --> 
+        </div>
+        <!-- end row --> 
+      </div>
+      <!-- end container --> 
+    </div>
+    <!-- end about-studio -->
+   
+  </section>
+  <!-- end content --> 
+</main>
+<div class="footer-spacing"></div>
+
+
+
+<!-- end footer-spacing -->
+<footer class="footer"> 
+  <ul class="social-media">
+    <li><a href="#">FB</a></li>
+    <li><a href="#">TW</a></li>
+    <li><a href="#">YT</a></li>
+    <li><a href="#">BE</a></li>
+  </ul>
+  <h4>Creativity is Everywhere</h4>
+  <h2 style="font-family: 'nasalization';font-size: 35px;">Have an idea or project? Let's talk</h2>
+  <a href="contact.html" class="btn-contact"><span data-hover="LET'S BE IN TOUCH">LET'S BE IN TOUCH</span></a>
+  <div class="footer-bar"> <span class="pull-left">© 2024 UMS - All rights reserved.</span> </div>
+  <!-- end footer-bar --> 
+</footer>
+<!-- end footer 
+<audio id="link" src="audio/link.mp3" preload="auto"></audio>-->
+
+<!-- JS FILES --> 
+<script src="js/jquery.min.js"></script> 
+<script>
+	// PRELOADER
+		(function($) {
+			$(window).load(function(){
+				$("body").addClass("page-loaded");	
+			});
+		})(jQuery)
+</script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/swiper.min.js"></script> 
+<script src="js/fancybox.min.js"></script> 
+<script src="js/jquery.stellar.js"></script> 
+<script src="js/odometer.min.js"></script> 
+<script src="js/hamburger.min.js"></script> 
+<script src="js/easings.js"></script> 
+<script src="js/isotope.min.js"></script> 
+<script src="js/wow.min.js"></script> 
+<script src="js/perspective.min.js"></script> 
+<script src="js/scripts.js"></script>
+
+
+
+
+</body>
+
+<!-- Mirrored from vitamin7.in/ums/lift-branding.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Dec 2024 14:52:11 GMT -->
+</html>

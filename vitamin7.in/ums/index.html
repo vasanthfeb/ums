@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from vitamin7.in/ums/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Dec 2024 14:49:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="format-detection" content="telephone=no">
+<title>UMS | Advertising Creative Agency</title>
+<meta name="author" content="Themezinho">
+<meta name="description" content="Anchor | Freelancer & Creative Agency Portfolio">
+<meta name="keywords" content="creative, works" >
+<meta property="og:description" content="UMS | Advertising Creative Agency">
+<meta property="og:image" content="../../themezinho.net/Anchor/preview.html">
+<meta property="og:site_name" content="UMS">
+<meta property="og:title" content="UMS | Advertising Creative Agency">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://www.themezinho.net/Anchor">
+
+<!-- TWITTER META -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@Anchor">
+<meta name="twitter:creator" content="@Anchor">
+<meta name="twitter:title" content="Anchor">
+<meta name="twitter:description" content="UMS | Advertising Creative Agency">
+<meta name="twitter:image" content="../../themezinho.net/Anchor/preview.html">
+
+<!-- FAVICON FILES -->
+<link href="https://vitamin7.in/404.php" rel="apple-touch-icon" sizes="144x144">
+<link href="https://vitamin7.in/404.php" rel="apple-touch-icon" sizes="114x114">
+<link href="https://vitamin7.in/404.php" rel="apple-touch-icon" sizes="72x72">
+<link href="https://vitamin7.in/404.php" rel="apple-touch-icon">
+<link href="images/favicon.png" rel="shortcut icon">
+
+<!-- CSS FILES -->
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/hamburger-menu.css">
+<link rel="stylesheet" href="css/odometer.min.css">
+<link rel="stylesheet" href="css/swiper.min.css">
+<link rel="stylesheet" href="css/fancybox.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+
+
+  
+<script>
+    "use strict";
+var testim = document.getElementById("testim"),
+  testimDots = Array.prototype.slice.call(
+    document.getElementById("testim-dots").children
+  ),
+  testimContent = Array.prototype.slice.call(
+    document.getElementById("testim-content").children
+  ),
+  testimLeftArrow = document.getElementById("left-arrow"),
+  testimRightArrow = document.getElementById("right-arrow"),
+  testimSpeed = 4500,
+  currentSlide = 0,
+  currentActive = 0,
+  testimTimer,
+  touchStartPos,
+  touchEndPos,
+  touchPosDiff,
+  ignoreTouch = 30;
+window.onload = function () {
+  // Testim Script
+  function playSlide(slide) {
+    for (var k = 0; k < testimDots.length; k++) {
+      testimContent[k].classList.remove("active");
+      testimContent[k].classList.remove("inactive");
+      testimDots[k].classList.remove("active");
+    }
+
+    if (slide < 0) {
+      slide = currentSlide = testimContent.length - 1;
+    }
+
+    if (slide > testimContent.length - 1) {
+      slide = currentSlide = 0;
+    }
+
+    if (currentActive != currentSlide) {
+      testimContent[currentActive].classList.add("inactive");
+    }
+    testimContent[slide].classList.add("active");
+    testimDots[slide].classList.add("active");
+
+    currentActive = currentSlide;
+
+    clearTimeout(testimTimer);
+    testimTimer = setTimeout(function () {
+      playSlide((currentSlide += 1));
+    }, testimSpeed);
+  }
+
+  testimLeftArrow.addEventListener("click", function () {
+    playSlide((currentSlide -= 1));
+  });
+
+  testimRightArrow.addEventListener("click", function () {
+    playSlide((currentSlide += 1));
+  });
+
+  for (var l = 0; l < testimDots.length; l++) {
+    testimDots[l].addEventListener("click", function () {
+      playSlide((currentSlide = testimDots.indexOf(this)));
+    });
+  }
+
+  playSlide(currentSlide);
+
+  // keyboard shortcuts
+  document.addEventListener("keyup", function (e) {
+    switch (e.keyCode) {
+      case 37:
+        testimLeftArrow.click();
+        break;
+
+      case 39:
+        testimRightArrow.click();
+        break;
+
+      case 39:
+        testimRightArrow.click();
+        break;
+
+      default:
+        break;
+    }
+  });
+
+  testim.addEventListener("touchstart", function (e) {
+    touchStartPos = e.changedTouches[0].clientX;
+  });
+
+  testim.addEventListener("touchend", function (e) {
+    touchEndPos = e.changedTouches[0].clientX;
+
+    touchPosDiff = touchStartPos - touchEndPos;
+
+    console.log(touchPosDiff);
+    console.log(touchStartPos);
+    console.log(touchEndPos);
+
+    if (touchPosDiff > 0 + ignoreTouch) {
+      testimLeftArrow.click();
+    } else if (touchPosDiff < 0 - ignoreTouch) {
+      testimRightArrow.click();
+    } else {
+      return;
+    }
+  });
+};
+
+</script>
+
+</head>
+<body>
+<!--<body oncontextmenu="return false;">
+<div class="preloader"> <img src="images/ums-logo-preloader.gif" alt="Image">
+ <!-- <ul class="text-rotater">
+    <li>Hangin there</li>
+    <li>Still loading</li>
+    <li>Almost done</li>
+  </ul>-->
+</div>
+<!-- end preloader -->
+<div class="transition-overlay"></div>
+<!-- end transition-overlay -->
+<main>
+  <ul class="hamburger-navigation">
+    <li><a href="index.html">Home</a>
+    </li>
+    <li><a style="color:white">About Us</a>
+     <ul class="dropdown">
+    	<li><a href="advertising.html">Advertising & Marketing</a></li>
+    	<li><a href="branding.html">Branding </a></li>
+    	<li><a href="web-and-app.html">Web & App</a></li>
+    </ul>
+      </li>
+      <li><a style="color:white">OOH</a>
+      <ul class="dropdown">
+    	<li><a href="theatre-release.html">Cinema</a></li>
+    	<li><a href="led-screens.html">LED Screens</a></li>
+    	<li><a href="lift-branding.html">Lift Branding</a></li>
+    	<li><a href="metro.html">Metro</a></li>
+    	<li><a href="bus-branding.html">Bus Branding</a></li>
+    	<li><a href="radio.html">Radio</a></li>
+    	<li><a href="mobile-van-branding.html">Mobile Van Branding</a></li>
+    	<li><a href="print-services.html">Print Services</a></li>
+    </ul>
+      </li>
+       <li><a href="event-management.html"> Event Management</a> </li>
+  
+    <li><a href="contact.html">Say Hello</a> </li>
+  </ul>
+  <!-- end hamburger-navigation -->
+  <svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <path class="shape-overlays__path" d=""></path>
+    <path class="shape-overlays__path" d=""></path>
+    <path class="shape-overlays__path" d=""></path>
+  </svg>
+  <header class="header" >
+    <div class="logo"><a href="index.html"><img src="images/ums-logo.png" alt="ums logo" style="width:300px"></a></div>
+    <!-- end logo --> 
+     <!--  <span class="phone">t: +380 83 857 5 577</span> --> 
+    <div class="hamburger" id="hamburger">
+      <div class="hamburger__line hamburger__line--01">
+        <div class="hamburger__line-in hamburger__line-in--01"></div>
+      </div>
+      <div class="hamburger__line hamburger__line--02">
+        <div class="hamburger__line-in hamburger__line-in--02"></div>
+      </div>
+      <div class="hamburger__line hamburger__line--03">
+        <div class="hamburger__line-in hamburger__line-in--03"></div>
+      </div>
+      <div class="hamburger__line hamburger__line--cross01">
+        <div class="hamburger__line-in hamburger__line-in--cross01"></div>
+      </div>
+      <div class="hamburger__line hamburger__line--cross02">
+        <div class="hamburger__line-in hamburger__line-in--cross02"></div>
+      </div>
+    </div>
+    <!-- end hamburger 
+    <div class="equalizer"> <span></span> <span></span> <span></span> <span></span> </div>
+    <!-- end equalizer -->
+   
+  </header>
+  <ul class="social-bar">
+    <li><a href="#">FB</a></li>
+    <li><a href="#">IN</a></li>
+    <li><a href="#">TY</a></li>
+    <li><a href="#">X</a></li>
+  </ul>
+
+  <section class="slider" style="background-color:#e00000">
+      
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+          
+             <div class="swiper-slide swiper-slide-1 bg-image" data-background="images/banner-1.png" data-stellar-background-ratio="0.5">
+          <div class="inner">
+            
+            <h2 data-swiper-parallax="-400">Command Attention with Captivating Outdoor Displays</h2>
+            
+           
+            </a> 
+            </div>
+           
+        </div>
+       
+        <div class="swiper-slide swiper-slide-2 bg-image" data-background="images/banner-2.png" data-stellar-background-ratio="0.5">
+          <div class="inner">
+            
+            <h2 data-swiper-parallax="-400" >Make Every Mile a Marketing Opportunity</h2>
+          
+            </div>  
+        </div> 
+        
+             <div class="swiper-slide swiper-slide-3 bg-image" data-background="images/banner-3.png" data-stellar-background-ratio="0.5">
+          <div class="inner">
+           
+            <h2 data-swiper-parallax="-400" >Capture Attention, Inspire Purchases</h2>
+          
+           </div>
+          
+        </div>
+        
+     <div class="swiper-slide swiper-slide-4 bg-image" data-background="images/banner-4.png" data-stellar-background-ratio="0.5">
+          <div class="inner">
+           
+            <h2 data-swiper-parallax="-400" >Catch Eyes, Captivate Minds</h2>
+            
+            </div>
+         
+        </div> 
+        
+       <div class="swiper-slide swiper-slide-5 bg-image" data-background="images/banner-5.png" data-stellar-background-ratio="0.5">
+          <div class="inner">
+            
+            <h2 data-swiper-parallax="-400" >Accelerate Your Brand’s Reach</h2>
+           
+            </div>
+        </div>  
+               
+        <div class="swiper-slide swiper-slide-6 bg-image" data-background="images/banner-6.png" data-stellar-background-ratio="0.5">
+          <div class="inner">
+            
+            <h2 data-swiper-parallax="-400" >Engage Audiences in the Magic of the Moment</h2>
+          
+            </div>
+          
+        </div> 
+       
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Navigation -->
+      <div class="swiper-button-prev"><span>PREV</span><img src="images/arrow-left.svg" alt="Image"></div>
+      <span class="swiper-button-line"></span>
+      <div class="swiper-button-next"><span>NEXT</span><img src="images/arrow-right.svg" alt="Image"></div>
+    </div>
+    <!-- end swiper-container -->
+    <div class="scroll-down"><span></span></div>
+  </section>
+  <!-- end slider -->
+  
+  
+  <section class="content">
+    <div class="works four-cols">
+      <div class="grid-sizer"></div>
+      <!-- end grid-sizer -->
+      
+      
+      <div class="grid-item-double">
+        <figure class="reveal-effect se2-white wow perspective-box"> <img src="images/home-page-blue.jpg" alt="Image">
+          <figcaption> 
+          <a href="advertising.html">
+            <div class="bg-color" data-background="#2095f4"></div>
+            <!-- end bg-color -->
+            
+            <!-- end brand -->
+            <h5>Advertising</h5></a>
+           </figcaption>
+        </figure>
+      </div>
+      
+      
+      <!-- end grid-item -->
+      <div class="grid-item-double">
+        <figure class="reveal-effect se2-white wow perspective-box"><img src="images/yellow-home-page.jpg" alt="Image">
+          <figcaption>
+          <a href="theatre-release.html"> <div class="bg-color" data-background="#ffc509"></div>
+            <!-- end bg-color -->
+           
+            <!-- end brand -->
+            <h5>Theatre Ad Release</h5>
+           </a>  </figcaption>
+        </figure>
+      </div>
+      
+      
+      <!-- end grid-item -->
+      <div class="grid-item">
+        <figure class="reveal-effect se2-white wow perspective-box"><img src="images/home-light-green.jpg" alt="Image">
+          <figcaption> 
+           <a href="event-management.html"> <div class="bg-color" data-background="#6dd7a9"></div>
+            <!-- end bg-color -->
+           
+            <!-- end brand -->
+            <h5>Event Management</h5>
+           </a> </figcaption>
+        </figure>
+      </div>
+      
+      
+       <!-- end grid-item -->
+      <div class="grid-item">
+        <figure class="reveal-effect se2-white wow perspective-box"><img src="images/radio-ads.jpg" alt="Image">
+          <figcaption> 
+           <a href="radio.html"> <div class="bg-color" data-background="#6dd7a9"></div>
+            <!-- end bg-color -->
+           
+            <!-- end brand -->
+            <h5>Radio Ads</h5>
+           </a> </figcaption>
+        </figure>
+      </div>
+      
+      
+      <!-- end grid-item 
+      <div class="grid-item">
+        <figure class="reveal-effect se2-white wow perspective-box"><img src="images/home-gray-vertical.jpg" alt="Image">
+          <figcaption>
+           <a href="bus-branding.php">  <div class="bg-color" data-background="#2d2d2f"></div>
+            
+            <h5>Bus Branding</h5></a>
+             </figcaption>
+        </figure>
+      </div>-->
+      
+      
+      <!-- end grid-item -->
+      <div class="grid-item">
+        <figure class="reveal-effect se2-white wow perspective-box"><img src="images/yellow-verticle-displays.jpg" alt="Image">
+          <figcaption> 
+          <a href="led-screens.html">   <div class="bg-color" data-background="#fec520"></div>
+            <!-- end bg-color -->
+      
+            <!-- end brand -->
+            <h5>LED Screens</h5></a>
+            </figcaption>
+        </figure>
+      </div>
+      
+      
+      <!-- end grid-item -->
+      <div class="grid-item-double">
+        <figure class="reveal-effect se2-white wow perspective-box"><img src="images/home-page-monkey.jpg" alt="Image">
+          <figcaption> 
+          <a href="branding.html">  <div class="bg-color" data-background="#9f7cb2"></div>
+            <!-- end bg-color -->
+          
+            <!-- end brand -->
+            <h5>Branding</h5></a>
+            </figcaption>
+        </figure>
+      </div>
+      <!-- end grid-item --> 
+      
+      
+      <div class="grid-item">
+        <figure class="reveal-effect se2-white wow perspective-box"><img src="images/lift-branding.jpg" alt="Image">
+          <figcaption> 
+          <a href="lift-branding.html">   <div class="bg-color" data-background="#fec520"></div>
+            <!-- end bg-color -->
+      
+            <!-- end brand -->
+            <h5>Elevator Branding</h5></a>
+            </figcaption>
+        </figure>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    <!-- end works -->
+    <div class="icon-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-12 wow fadeIn"> <img src="images/icon-advertising.png" alt="Image"> <small>Advertising & Marketing</small>
+            
+            <p>Diversity in advertising and marketing is essential. Our vibrant strategies, like colorful candies, offer tailored opportunities to elevate your business</p>
+            <a href="advertising.html">DISCOVER MORE</a> </div>
+          <!-- end col-4 -->
+          <div class="col-md-4 col-sm-4 col-12 wow fadeIn"> <img src="images/icon-OOH.png" alt="Image"> <small>OOH </small>
+            
+            <p>Anchor provides a fantastic living experience and its facilities accommodate every students needs.</p>
+            <a href="#">DISCOVER MORE</a> </div>
+          <!-- end col-4 -->
+          <div class="col-md-4 col-sm-4 col-12 wow fadeIn"> <img src="images/icon-webandapp.png" alt="Image"> <small>Web & App</small>
+            
+            <p>Anchor provides a fantastic living experience and its facilities accommodate every students needs.</p>
+            <a href="web-and-app.html">DISCOVER MORE</a> </div>
+          <!-- end col-4 -->
+          <div class="col-md-4 col-sm-4 col-12 wow fadeIn" data-wow-delay="0.2s"> <img src="images/icon-events.png" alt="Image"> <small>Event Management</small>
+            
+            <p>we are committed to exceeding expectations and creating memorable experiences that resonate long after the event concludes.</p>
+            <a href="event-management.html">DISCOVER MORE</a> </div>
+          <!-- end col-4 -->
+         
+        </div>
+        <!-- end row --> 
+      </div>
+      <!-- end container --> 
+    </div>
+    <!-- end icon-features--> 
+    
+    
+    <div class="clients">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="row">
+                    <div class="col-12 wow fadeInUp">
+                      <div class="titles">
+                        <h2 class="clienth2">Clients</h2>
+                      </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 wow fadeIn" style="margin-top: 20px;">
+                    <ul>
+                      <li>
+                        <figure><img src="images/client/aabaranam-chennai-UMS.jpg" alt="Image"></figure>
+                      </li>
+                      <li>
+                        <figure><img src="images/client/bhima-kerala-UMS.jpg" alt="Image"></figure>
+                      </li>
+                      <li>
+                        <figure><img src="images/client/cliftons-kerala-UMS.jpg" alt="Image"></figure>
+                      </li>
+                      <li>
+                        <figure><img src="images/client/clubw-kerala-UMS.jpg" alt="Image"></figure>
+                      </li>
+                      <li>
+                        <figure><img src="images/client/crafthospital-kerala-UMS.jpg" alt="Image"></figure>
+                      </li>
+                      <li>
+                        <figure><img src="images/client/cust-kerala-UMS.jpg" alt="Image"></figure>
+                      </li>
+                       <li>
+                        <figure><img src="images/client/ddrc-kerala-UMS.jpg" alt="Image"></figure>
+                      </li>
+                      <li>
+                        <figure><img src="images/client/damro-kerala-UMS.jpg" alt="Image"></figure>
+                      </li>
+                      <li>
+                        <figure><img src="images/client/rsaf-kerala-UMS.jpg" alt="Image"></figure>
+                      </li>
+                      <li>
+                        <figure><img src="images/client/evm-skoda-kerala-UMS.jpg" alt="Image"></figure>
+                      </li>
+                       <li>
+                        <figure><img src="images/client/iplanet-kerala-UMS.jpg" alt="Image"></figure>
+                      </li>
+                      <li>
+                        <figure><img src="images/client/max-kerala-UMS.jpg" alt="Image"></figure>
+                      </li>
+                      <li>
+                        <figure><img src="images/client/nippon-toyota-kerala-UMS.jpg" alt="Image"></figure>
+                      </li>
+                      <li>
+                        <figure><img src="images/client/renacon-kerala-UMS.jpg" alt="Image"></figure>
+                      </li>
+                      <li>
+                        <figure><img src="images/client/riti-kerala-UMS.jpg" alt="Image"></figure>
+                      </li>
+                       <li>
+                        <figure><img src="images/client/sip-kerala-UMS.jpg" alt="Image"></figure>
+                      </li>
+                      <li>
+                        <figure><img src="images/client/tukxi-kerala-UMS.jpg" alt="Image"></figure>
+                      </li>
+                     
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    
+    <div  class="clients"> 
+      
+            <div class="row justify-content-md-center">
+                <div class="row">
+                    <div class="col-12 wow fadeInUp">
+                      <div class="titles">
+                        <h2 class="clienth2">Reviews</h2>
+                      </div>
+                    </div>
+                </div> 
+             </div>
+                <div class="slideshow-container">
+            
+                    <div class="mySlides">
+                        <img src="images/team01.jpg" alt="Avatar" style="width:200px;border-radius: 50%;" >
+                        <p style="padding-top:15px">I love you the more in that I believe you had liked me for my own sake and for nothing else</p>
+                      
+                      <p class="author">- John Keats</p>
+                    </div>
+                    
+                    <div class="mySlides">
+                       <img src="images/team01.jpg" alt="Avatar" style="width:200px;border-radius: 50%;" >
+                        <p style="padding-top:15px">I love you the more in that I believe you had liked me for my own sake and for nothing else</p>
+                      
+                      <p class="author">- John Keats</p>
+                    </div>
+                    
+                    <div class="mySlides">
+                       <img src="images/team01.jpg" alt="Avatar" style="width:200px;border-radius: 50%;" >
+                        <p style="padding-top:15px">I love you the more in that I believe you had liked me for my own sake and for nothing else</p>
+                      
+                      <p class="author">- John Keats</p>
+                    </div>
+                    
+                    
+                </div>
+                
+       
+                
+                <div class="dot-container">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+       
+    </div>
+   
+   
+  
+   
+    
+  </section>
+  <!-- end content --> 
+  
+  
+  
+</main>
+<div class="footer-spacing"></div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" tes-active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " tes-active";
+}
+</script>
+
+  <!-- end footer-spacing -->
+<footer class="footer"> 
+  <ul class="social-media">
+    <li><a href="#">FB</a></li>
+    <li><a href="#">TW</a></li>
+    <li><a href="#">YT</a></li>
+    <li><a href="#">BE</a></li>
+  </ul>
+  <h4>Creativity is Everywhere</h4>
+  <h2 style="font-family: 'nasalization';font-size: 35px;">Have an idea or project? Let's talk</h2>
+  <a href="contact.html" class="btn-contact"><span data-hover="LET'S BE IN TOUCH">LET'S BE IN TOUCH</span></a>
+  <div class="footer-bar"> <span class="pull-left">© 2024 UMS - All rights reserved.</span> </div>
+  <!-- end footer-bar --> 
+</footer>
+<!-- end footer 
+<audio id="link" src="audio/link.mp3" preload="auto"></audio>-->
+
+<!-- JS FILES --> 
+<script src="js/jquery.min.js"></script> 
+<script>
+	// PRELOADER
+		(function($) {
+			$(window).load(function(){
+				$("body").addClass("page-loaded");	
+			});
+		})(jQuery)
+</script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/swiper.min.js"></script> 
+<script src="js/fancybox.min.js"></script> 
+<script src="js/jquery.stellar.js"></script> 
+<script src="js/odometer.min.js"></script> 
+<script src="js/hamburger.min.js"></script> 
+<script src="js/easings.js"></script> 
+<script src="js/isotope.min.js"></script> 
+<script src="js/wow.min.js"></script> 
+<script src="js/perspective.min.js"></script> 
+<script src="js/scripts.js"></script>
+
+
+
+
+</body>
+
+<!-- Mirrored from vitamin7.in/ums/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Dec 2024 14:50:21 GMT -->
+</html>
